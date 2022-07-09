@@ -1,0 +1,51 @@
+<div class="container">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="logo">
+      <h2>Inova Health System</h2>
+    </div>
+    <div class="title">
+      <h2>Check In</h2>
+    </div>
+    <div>
+      <h4>Fill In Your Information To Check In</h4>
+    </div>
+    <div>
+      <label>Patient Date of Birth</label>
+      <input type="date" formControlName="dateBirth" required />
+    </div>
+    <div>
+      <label>Zipcode(5 digital)</label>
+      <input
+        type="text"
+        placeholder="ex:12345"
+        formControlName="zipCode"
+        required
+      />
+    </div>
+    <div></div>
+    <div>
+      <label></label>
+      <button class="danger" type="submit" [disabled]="form.invalid">
+        Continue
+      </button>
+    </div>
+  </form>
+</div>
+<div class="container">
+<header>title</header>
+<div class="subtitle">Here is your visit
+<div class="info-container">
+  <h4>
+    Verify the details of your visit. Complete consnets and choose
+    communication preference
+  </h4>
+  <ul>
+    <li>time,date</li>
+    <li>time,date</li>
+    <li>
+      <button>Start Check-in</button>
+    </li>
+  </ul>
+</div>
+</div>
+</div>
